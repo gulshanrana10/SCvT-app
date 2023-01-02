@@ -1,0 +1,28 @@
+Operation : ADD DN                                            DN    : dsCounterClassId=1,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+ Attribute: objectClass                                       Value: dsLdapCounterClassEntry
+ Attribute: dsCounterClassId                                  Value: 1
+ Attribute: dsCounterClassName                                Value: hlruser
+
+Operation : ADD DN                                            DN    : dsCounterClassId=2,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+ Attribute: objectClass                                       Value: dsLdapCounterClassEntry
+ Attribute: dsCounterClassId                                  Value: 2
+ Attribute: dsCounterClassName                                Value: pgwoperdefault
+
+Operation : ADD DN                                            DN    : dsCounterClassId=3,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+ Attribute: objectClass                                       Value: dsLdapCounterClassEntry
+ Attribute: dsCounterClassId                                  Value: 3
+ Attribute: dsCounterClassName                                Value: hssuser
+
+Operation : ADD DN                                            DN    : dsCounterClassId=4,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+ Attribute: objectClass                                       Value: dsLdapCounterClassEntry
+ Attribute: dsCounterClassId                                  Value: 4
+ Attribute: dsCounterClassName                                Value: epsuser
+
+Operation : ADD DN                                            DN    : dsCounterClassId=5,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+ Attribute: objectClass                                       Value: dsLdapCounterClassEntry
+ Attribute: dsCounterClassId                                  Value: 5
+ Attribute: dsCounterClassName                                Value: eiruser
+
+Operation : REMOVE EXTRA VALUES FROM DN                       DN    : dsTrigName=RESET-TRIGGER-INFO-Obj-DEFAULT,configType=triggering,config=sdf,dsaId=30,dc=C-NTDB
+Attribute : dsTrigCondAttrFilter                              Value : (!(hssHost=*))
+

@@ -1,0 +1,30 @@
+dn: dsCounterClassId=1,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+objectClass: dsLdapCounterClassEntry
+dsCounterClassId: 1
+dsCounterClassName: hlruser
+
+dn: dsCounterClassId=2,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+objectClass: dsLdapCounterClassEntry
+dsCounterClassId: 2
+dsCounterClassName: pgwoperdefault
+
+dn: dsCounterClassId=3,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+objectClass: dsLdapCounterClassEntry
+dsCounterClassId: 3
+dsCounterClassName: hssuser
+
+dn: dsCounterClassId=4,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+objectClass: dsLdapCounterClassEntry
+dsCounterClassId: 4
+dsCounterClassName: epsuser
+
+dn: dsCounterClassId=5,configType=ldapCounterClass,config=sdf,dsaId=30,dc=C-NTDB
+objectClass: dsLdapCounterClassEntry
+dsCounterClassId: 5
+dsCounterClassName: eiruser
+
+dn: dsTrigName=RESET-TRIGGER-INFO-Obj-DEFAULT,configType=triggering,config=sdf,dsaId=30,dc=C-NTDB
+changetype: modify
+delete: dsTrigCondAttrFilter
+dsTrigCondAttrFilter: (!(hssHost=*))
+
